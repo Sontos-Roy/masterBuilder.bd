@@ -722,7 +722,7 @@ button[type=submit] {
   margin-left: 0;
 }
 .navbar .container .upper-side .logo img {
-  height: 48px;
+  height: 68px;
 }
 .navbar .container .upper-side .phone-email {
   margin-right: 0;
@@ -3379,7 +3379,10 @@ button[type=submit] {
     margin-left: 0;
     margin-top: 30px;
   }
-
+  .intro figure .holder {
+    transform: translate(0, -45px);
+    padding: 0 1%;
+  }
   .benefits .col {
     width: 50%;
     flex-basis: auto;
