@@ -106,8 +106,6 @@
 	
 		
 	});	
-		
-	
 	
 	// COUNTER
 			 $(document).scroll(function(){

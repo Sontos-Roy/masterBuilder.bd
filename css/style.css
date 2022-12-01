@@ -3455,6 +3455,9 @@ button[type=submit] {
   .content-box .person-details h5{
     font-size: 4vw;
   }
+  .responsive-h2{
+    font-size: 17px !important;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
