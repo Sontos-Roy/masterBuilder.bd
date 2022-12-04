@@ -199,6 +199,23 @@
 			});
 			return false;
 			}); 
+			$(document).ready(function() {
+				var stickyTop = $('.sticky-top').offset().top;
+			  
+				$(window).scroll(function() {
+				  var windowTop = $(window).scrollTop();
+			  
+				  if (stickyTop < windowTop) {
+					$('.sticky-top').css('position', 'fixed');
+					$('.sticky-top').css("background", "white");
+					$('.sticky-top').css("transition", "0s");
+				} else {
+					$('.sticky-top').css('position', 'relative');
+					$('.sticky-top').css("background", "transparent");
+				  }
+				});
+			  });
+
 	
 	
 	
@@ -220,6 +237,7 @@
 			$(window).load(function(){
 				$("body").addClass("page-loaded");	
 			});
+
 	
 		
 		

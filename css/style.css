@@ -359,7 +359,7 @@ button[type=submit] {
   display: block;
   height: 2px;
   width: 30px;
-  background: #fff;
+  background: #000;
   opacity: 1;
   position: absolute;
   left: 0;
@@ -429,7 +429,7 @@ button[type=submit] {
   right: 0;
   top: 0;
   z-index: 12;
-  background: #ebcfa7;
+  background: #0497db;
   -webkit-transition: all 0.5s ease;
   -moz-transition: all 0.5s ease;
   transition: all 0.5s ease;
@@ -561,10 +561,10 @@ button[type=submit] {
   position: fixed;
   left: -100%;
   top: 0;
-  background: #26282b;
+  background: whitesmoke;
   z-index: 10;
   box-shadow: 10px 10px 50px rgba(0, 0, 0, 0.2);
-  color: #fff;
+  color: black;
   font-size: 14px;
   padding: 0 40px;
   display: flex;
@@ -609,7 +609,7 @@ button[type=submit] {
 }
 .side-navigation .menu ul li a {
   display: inline-block;
-  color: #fff;
+  color: rgb(5, 5, 5);
   font-size: 3vw;
   font-weight: 600;
 }
@@ -626,7 +626,7 @@ button[type=submit] {
   margin-bottom: 30px;
 }
 .side-navigation figure img {
-  height: 40px;
+  height: 70px;
 }
 .side-navigation address {
   display: block;
@@ -691,13 +691,17 @@ button[type=submit] {
 }
 
 /* NAVBAR */
+
 .navbar {
   width: 100%;
   padding: 0;
-  position: absolute;
+  position: relative;
   left: 0;
-  top: 0;
+  top: 0 !important;
   z-index: 3;
+  display: block;
+  background: whitesmoke;
+  transition: top 0.3s;
 }
 .navbar .container {
   flex-direction: column;
@@ -706,7 +710,7 @@ button[type=submit] {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  padding: 20px 0;
+  padding: 0px 0;
   align-items: center;
   transform: translateY(-80px);
   -webkit-transition: all 0.5s ease;
@@ -729,12 +733,13 @@ button[type=submit] {
   margin-left: auto;
   margin-top: 5px;
   text-align: right;
-  color: #fff;
+  color: black;
 }
 .navbar .container .upper-side .phone-email img {
   float: right;
   height: 34px;
   margin-left: 15px;
+  filter: brightness(0);
 }
 .navbar .container .upper-side .phone-email h4 {
   margin-bottom: -5px;
@@ -749,11 +754,11 @@ button[type=submit] {
 }
 .navbar .container .upper-side .phone-email small a {
   opacity: 0.5;
-  color: #fff;
+  color: rgb(0, 0, 0);
 }
 .navbar .container .upper-side .phone-email small a:hover {
   text-decoration: none;
-  color: #ebcfa7;
+  color: #252525;
   opacity: 1;
 }
 .navbar .container .upper-side .language {
@@ -766,7 +771,7 @@ button[type=submit] {
 .navbar .container .upper-side .language a {
   display: inline-block;
   margin: 0 5px;
-  color: #fff;
+  color: rgb(0, 0, 0);
   font-weight: 600;
 }
 .navbar .container .upper-side .language a:hover {
@@ -779,7 +784,6 @@ button[type=submit] {
   margin-right: 0;
 }
 .navbar .container .menu {
-  width: 100%;
   display: flex;
   flex-wrap: wrap;
   border-top: 1px solid rgba(255, 255, 255, 0.15);
@@ -851,7 +855,7 @@ button[type=submit] {
   border-color: transparent;
 }
 .navbar .container .menu ul li a {
-  color: #fff;
+  color: black;
   display: inline-block;
   font-weight: 600;
   padding: 25px 0;
@@ -859,7 +863,7 @@ button[type=submit] {
 }
 .navbar .container .menu ul li a:hover {
   text-decoration: none;
-  color: #ebcfa7;
+  color: #9c9b99;
   border-top: 1px solid #ebcfa7;
 }
 
@@ -905,7 +909,7 @@ button[type=submit] {
   position: absolute;
   left: 0;
   top: 0;
-  background: #26282b;
+  background: #c4c4c5;
   background: -moz-linear-gradient(161deg, #26282b 0%, #26282b 49%, #9f8054 100%);
   background: -webkit-linear-gradient(161deg, #26282b 0%, #26282b 49%, #9f8054 100%);
   background: linear-gradient(161deg, #26282b 0%, #26282b 49%, #9f8054 100%);
@@ -1174,7 +1178,7 @@ button[type=submit] {
   display: inline-block;
   margin-bottom: 0;
   margin-top: -20px;
-  background: #ebcfa7;
+  background: #0497dbc0;
   position: relative;
 }
 .intro figure .pattern-bg {
@@ -1627,9 +1631,8 @@ button[type=submit] {
   display: flex;
   flex-wrap: wrap;
   padding: 80px 50px;
-  margin-bottom: -100px;
-  color: #fff;
-  background: #9f8054;
+  /* margin-bottom: -100px; */
+  color: #000;
   position: relative;
   overflow: hidden;
 }
@@ -2863,7 +2866,7 @@ button[type=submit] {
   margin-bottom: -80px;
 }
 .footer-bar .inner {
-  background: #9f8054;
+  background: #0497db;
   padding: 60px 30px;
   color: #fff;
 }
